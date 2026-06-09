@@ -256,20 +256,20 @@ streamlit run streamlit_app.py
 
 ## 🖼️ Application Screenshots
 
-### Landing Page — Model Overview
-![Landing Page](screenshots/Screenshot 2026-06-08 140756.png)
+**Landing Page — Model Overview**
+![Landing Page](screenshots/landing-page.png)
 
-### Prediction Page — Upload Overview
-![Prediction Page](screenshots/Screenshot 2026-06-08 140849.png)
+**Prediction Page — Upload Overview**
+![Prediction Page](screenshots/prediction-page.png)
 
-### Risk Segmentation — Three-Tier Portfolio View
-![Risk Segmentation Cards](screenshots/Screenshot 2026-06-08 140936.png)
+**Risk Segmentation — Three-Tier Portfolio View**
+![Risk Segmentation Cards](screenshots/risk-segmentation.png)
 
-### Risk Analytics — Donut Chart & Probability Distribution
-![Analytics Charts](screenshots/Screenshot 2026-06-08 141010.png)
+**Risk Analytics — Donut Chart & Probability Distribution**
+![Analytics Charts](screenshots/analytics-charts.png)
 
-### Individual Predictions Table
-![Predictions Table](screenshots/Screenshot 2026-06-08 141040.png)
+**Individual Predictions Table**
+![Predictions Table](screenshots/predictions-table.png)
 
 ---
 
