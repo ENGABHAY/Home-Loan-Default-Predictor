@@ -63,6 +63,12 @@ The system is fully deployed via a **FastAPI REST backend** and an interactive *
 
 ### Data Sources
 
+## 📥 Dataset Setup
+
+This project uses the [Home Credit Default Risk](https://www.kaggle.com/competitions/home-credit-default-risk/data) dataset from Kaggle.
+
+**Download & place files as follows:**
+
 | File | Description |
 |---|---|
 | `application_train.csv` | Primary applicant data — demographics, financials, employment |
@@ -175,6 +181,27 @@ Raw Input CSV
     └─► default_probability (float, 0–1)
     └─► prediction (0 or 1) + Risk Tier
 ```
+## 📈 Model Performance
+
+> Model: CatBoost Classifier · Tuned with Optuna (30 trials) · Threshold: 0.5
+
+| Metric | Score |
+|--------|-------|
+| ROC-AUC Score | **0.7907** |
+| Accuracy | 0.73 |
+| Weighted F1-Score | 0.79 |
+
+### Classification Report — Test Set (46,127 samples)
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0 — No Default | 0.97 | 0.73 | 0.83 | 42,410 |
+| 1 — Default | 0.19 | 0.71 | 0.29 | 3,717 |
+| **Weighted Avg** | **0.90** | **0.73** | **0.79** | **46,127** |
+
+> ⚖️ **Note on class imbalance:** The dataset is heavily imbalanced (~91% non-default).
+> The model prioritizes **high recall on defaults (0.71)** to minimize missed risky loans,
+> which is the critical objective in credit risk use cases.
 
 ### Risk Segmentation
 ```
