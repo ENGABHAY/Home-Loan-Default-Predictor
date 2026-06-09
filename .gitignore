@@ -1,0 +1,67 @@
+# ─────────────────────────────────────────────
+#  Home Credit Loan Default Predictor — .gitignore
+# ─────────────────────────────────────────────
+
+# ── Python ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# ── Virtual environments ──────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter / IPython ────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── CatBoost training artefacts ──────────────
+catboost_info/
+
+# ── Raw dataset files (too large for GitHub) ─
+data/
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# ── Model artefacts (use Git LFS or releases) ─
+# Uncomment the lines below if you don't want
+# to commit the trained model to the repo.
+# artifacts/model.cbm
+# artifacts/preprocessor.pkl
+# artifacts/feature_order.pkl
+
+# ── Environment / secrets ────────────────────
+.env
+.env.*
+*.key
+secrets.yaml
+
+# ── OS noise ─────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs & editors ───────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── Logs & temp files ────────────────────────
+*.log
+*.tmp
+*.bak
+*.swp

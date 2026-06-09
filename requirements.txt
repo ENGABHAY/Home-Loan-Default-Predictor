@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+category_encoders
+catboost
+joblib
+fastapi
+uvicorn
+python-multipart
+streamlit
