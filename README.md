@@ -13,7 +13,7 @@
 
 ## 📌 Project Overview
 
-Financial institutions face significant risk from loan defaults, making accurate credit risk assessment critical for sustainable lending. This project builds an ML system that predicts **whether a loan applicant will default** — using 209 engineered features derived from 7 relational data sources covering application details, credit bureau history, previous loans, and payment behavior.
+Financial institutions face significant risk from loan defaults, making accurate credit risk assessment critical for sustainable lending. This project builds an ML system that predicts **whether a loan applicant will default** — using 209 engineered features derived from 7 relational data source covering application details, credit bureau history, previous loans, and payment behavior.
 
 The system is fully deployed via a **FastAPI REST backend** and an interactive **Streamlit web dashboard**, making it ready for real-world credit risk or operational integration.
 
